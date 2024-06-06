@@ -1,8 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: Atkinson Hyperlegible, ui-sans-serif, sans-serif, STIX Two Math;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-attachment: fixed;
+    background-color: #202020;
+    background-image: linear-gradient(to bottom, #323232, #0e0e0e);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-size-adjust: 100%;
 }
 
 header {
@@ -61,4 +69,26 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.content {
+    max-width: 49rem;
+    text-align: justify;
+    background: #fff;
+    color: #515151;
+    padding: 2rem;
+}
+
+html {
+    scrollbar-color: #09ff00 #202020;
+    line-height: 1.5;
 }
