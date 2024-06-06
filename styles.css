@@ -93,17 +93,29 @@ html {
     line-height: 1.5;
 }
 
+#sidebar {
+    flex: 0 0 auto;
+    padding: 2rem;
+}
+
 #sidebar, .home #sidebar {
     width: 19rem;
     text-align: left;
-  }
-  #sidebar .site-title, .home #sidebar .site-title {
+}
+
+#sidebar .site-title, .home #sidebar .site-title {
     font-family: Atkinson Hyperlegible, ui-sans-serif, sans-serif, STIX Two Math;
     font-size: 2rem;
-  }
-  @media (max-width: 49rem) {
+}
+
+@media (max-width: 49rem) {
     #sidebar, .home #sidebar {
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
     }
-  }
+}
+
+#sidebar .favicon, .home #sidebar .favicon {
+    width: 30px;
+    margin: 0.3rem 0 1rem;
+}
