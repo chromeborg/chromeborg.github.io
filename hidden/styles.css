@@ -140,3 +140,7 @@ html {
 section#content {
     background-color: #fff;
 }
+
+.post {
+    margin-top: 0.25rem;
+}
