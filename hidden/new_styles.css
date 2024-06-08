@@ -1,0 +1,458 @@
+
+
+PAGE
+
+
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+.page-title,
+.post-title,
+.post-title a {
+  color: #313131;
+}
+
+h2.post-title,
+h2.page-title {
+  font-size: 2rem;
+}
+
+
+.post .content li + li,
+.page .content li + li {
+  margin-top: 0.25rem;
+}
+
+h2.page-title, h2.post-title {
+  font-size: revert;
+}
+
+.page-meta {
+  margin-top: -0.5rem;
+}
+
+
+HOME
+
+
+
+.home #sidebar {
+  text-align: center;
+}
+.home #sidebar .site-title {
+  font-size: 3.25rem;
+}
+.home #sidebar header ~ *,
+.home #sidebar p.lead {
+  display: block;
+}
+.home #sidebar header ~ nav {
+  display: flex;
+}
+.home #sidebar > *:last-child {
+  margin-bottom: 0.5rem;
+}
+
+  #sidebar,
+  .home #sidebar {
+    text-align: left;
+    width: 18rem;
+  }
+  #sidebar > *:last-child,
+  .home #sidebar > *:last-child {
+    margin-bottom: 0;
+  }
+
+.home.index #sidebar {
+  padding-bottom: 2rem;
+}
+
+#sidebar, .home #sidebar {
+  width: 19rem;
+  text-align: left;
+}
+#sidebar .site-title, .home #sidebar .site-title {
+  font-family: Atkinson Hyperlegible, ui-sans-serif, sans-serif, STIX Two Math;
+  font-size: 2rem;
+}
+@media (max-width: 49rem) {
+  #sidebar, .home #sidebar {
+    width: 100%;
+    text-align: center;
+  }
+}
+#sidebar .favicon, .home #sidebar .favicon {
+  width: 30px;
+  margin: 0.3rem 0 1rem;
+}
+
+
+
+SIDEBAR
+
+
+#sidebar {
+flex: 0 0 auto;
+padding: 2rem;
+}
+#sidebar .site-title {
+font-family: "Abril Fatface", serif;
+font-size: 1.25rem;
+font-weight: normal;
+margin-bottom: 0.5rem;
+margin-top: 0;
+}
+#sidebar .site-title .back-arrow {
+margin-right: 0.5rem;
+}
+
+
+#sidebar header ~ *,
+#sidebar header ~ nav,
+#sidebar p.lead {
+display: none;
+}
+
+.home #sidebar {
+text-align: center;
+}
+.home #sidebar .site-title {
+font-size: 3.25rem;
+}
+.home #sidebar header ~ *,
+.home #sidebar p.lead {
+display: block;
+}
+.home #sidebar header ~ nav {
+display: flex;
+}
+.home #sidebar > *:last-child {
+margin-bottom: 0.5rem;
+}
+
+/* Undo mobile CSS */
+#sidebar,
+.home #sidebar {
+text-align: left;
+width: 18rem;
+}
+#sidebar > *:last-child,
+.home #sidebar > *:last-child {
+margin-bottom: 0;
+}
+#sidebar {
+position: fixed;
+bottom: 0;
+left: 0;
+}
+#sidebar .site-title {
+font-size: 3.25rem;
+}
+#sidebar .site-title .back-arrow {
+display: none;
+}
+#sidebar p.lead,
+#sidebar header ~ * {
+display: block;
+}
+#sidebar header ~ nav {
+display: flex;
+}
+.index #sidebar {
+margin-bottom: 0;
+}
+/* -----------------------------------------------------------
+Sidebar links + nav
+----------------------------------------------------------- */
+#sidebar a {
+color: #fff;
+}
+#sidebar a svg {
+fill: rgba(255, 255, 255, 0.85);
+}
+
+#sidebar a:hover svg,
+#sidebar a:focus svg,
+#sidebar a.active svg {
+fill: rgba(255, 255, 255, 0.85);
+}
+
+#sidebar a:hover,
+#sidebar a:focus {
+text-decoration: underline;
+}
+#sidebar a:hover.icon,
+#sidebar a:focus.icon {
+text-decoration: none;
+}
+
+#sidebar a.active {
+font-weight: bold;
+}
+
+#sidebar .site-title {
+color: #fff;
+}
+#sidebar .site-title a {
+color: inherit;
+}
+
+#sidebar nav {
+display: flex;
+}
+
+#sidebar-nav-links {
+flex-flow: column nowrap;
+}
+
+#sidebar-icon-links {
+flex-flow: row wrap;
+justify-content: center;
+margin-top: 1rem;
+max-width: 100%;
+}
+@media (min-width: 49rem) {
+#sidebar-icon-links {
+    justify-content: flex-start;
+    margin-left: -0.25em;
+}
+}
+
+#sidebar nav > * {
+display: block;
+line-height: 1.75;
+}
+
+#sidebar nav > .icon {
+display: inline-block;
+font-size: 1.5rem;
+margin: 0 0.25em;
+}
+
+@media print {
+#sidebar {
+    display: none;
+}
+body {
+    display: block;
+}
+.container {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+.container > * {
+    max-width: 100%;
+}
+html {
+    font-size: normal;
+}
+}
+.index #sidebar {
+padding-bottom: calc(2rem + 1em);
+}
+
+.home.index #sidebar {
+padding-bottom: 2rem;
+}
+@media (min-width: 49rem) {
+.pagination > a {
+    box-shadow: none;
+}
+.pagination > a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
+}
+.content .pagination:first-child {
+    margin-top: 0;
+}
+.content .pagination:first-child + * {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+.index #sidebar {
+    padding-bottom: 2rem;
+}
+}
+#sidebar, .home #sidebar {
+width: 19rem;
+text-align: left;
+}
+#sidebar .site-title, .home #sidebar .site-title {
+font-family: Atkinson Hyperlegible, ui-sans-serif, sans-serif, STIX Two Math;
+font-size: 2rem;
+}
+@media (max-width: 49rem) {
+#sidebar, .home #sidebar {
+    width: 100%;
+    text-align: center;
+}
+}
+#sidebar .favicon, .home #sidebar .favicon {
+width: 30px;
+margin: 0.3rem 0 1rem;
+}
+
+
+
+SITE-TITLE 
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+  color: #313131;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+CONTAINER 
+
+
+
+
+.container {
+display: flex;
+flex: 1 1 auto;
+flex-direction: column;
+}
+.container > .content {
+flex-grow: 1;
+padding-bottom: 4rem;
+}
+.container > header {
+background: transparent;
+color: #fff;
+margin: -1.5rem 2rem 2rem;
+}
+.container > header h1,
+.container > header h2 {
+color: inherit;
+}
+.container > header h1:last-child,
+.container > header h2:last-child {
+margin-bottom: 0;
+}
+/* -----------------------------------------------------------
+Tablet / Desktop view
+----------------------------------------------------------- */
+@media (min-width: 49rem) {
+body {
+    flex-direction: row;
+    min-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+}
+body > * {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+}
+/* Undo mobile CSS */
+#sidebar,
+.home #sidebar {
+    text-align: left;
+    width: 18rem;
+}
+#sidebar > *:last-child,
+.home #sidebar > *:last-child {
+    margin-bottom: 0;
+}
+#sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#sidebar .site-title {
+    font-size: 3.25rem;
+}
+#sidebar .site-title .back-arrow {
+    display: none;
+}
+#sidebar p.lead,
+#sidebar header ~ * {
+    display: block;
+}
+#sidebar header ~ nav {
+    display: flex;
+}
+.index #sidebar {
+    margin-bottom: 0;
+}
+.container {
+    background: #fff;
+    color: #515151;
+    min-height: 100vh;
+    padding: 4rem 4rem 0;
+    margin-left: 18rem;
+}
+.container > header {
+    color: #313131;
+    margin: 0;
+}
+.container > header h1,
+.container > header h2 {
+    color: inherit;
+}
+.container > header h1:last-child,
+.container > header h2:last-child {
+    margin-bottom: 0.5rem;
+}
+.container > * {
+    max-width: 38rem;
+    padding: 0;
+}
+}
+@media print {
+#sidebar {
+    display: none;
+}
+body {
+    display: block;
+}
+.container {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+.container > * {
+    max-width: 100%;
+}
+html {
+    font-size: normal;
+}
+}
+@media (min-width: 49rem) {
+.container {
+    margin-left: 19rem;
+}
+}
+
+
+
+CONTENT 
+
+
+.content {
+background: #fff;
+color: #515151;
+padding: 2rem;
+}
+
+
+.container > .content {
+flex-grow: 1;
+padding-bottom: 4rem;
+}
