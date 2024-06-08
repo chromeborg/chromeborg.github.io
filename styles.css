@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     background-attachment: fixed;
     background-color: #202020;
-    background-image: linear-gradient(to bottom, #323232, #0e0e0e);
+    /* background-image: linear-gradient(to bottom, #323232, #0e0e0e); */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
