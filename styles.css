@@ -100,18 +100,11 @@ html {
 }
 
 #sidebar {
+    width: 19rem;
     flex: 0 0 auto;
     padding: 2rem;
-}
-
-#sidebar, .home #sidebar {
-    width: 19rem;
     text-align: left;
-}
-
-#sidebar .site-title, .home #sidebar .site-title {
-    font-family: Atkinson Hyperlegible, ui-sans-serif, sans-serif, STIX Two Math;
-    font-size: 2rem;
+    position: fixed;
 }
 
 @media (max-width: 49rem) {
