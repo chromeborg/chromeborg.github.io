@@ -80,6 +80,12 @@ div {
     unicode-bidi: isolate;
 }
 
+.container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
 .content {
     max-width: 49rem;
     text-align: justify;
