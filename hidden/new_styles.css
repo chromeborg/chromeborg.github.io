@@ -456,3 +456,37 @@ padding: 2rem;
 flex-grow: 1;
 padding-bottom: 4rem;
 }
+
+.post .content li + li,
+.page .content li + li {
+margin-top: 0.25rem;
+}
+
+.content .pagination:first-child {
+margin-top: -4rem;
+}
+
+
+@media (min-width: 49rem) {
+.pagination > a {
+    box-shadow: none;
+}
+.pagination > a:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
+}
+.content .pagination:first-child {
+    margin-top: 0;
+}
+.content .pagination:first-child + * {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+.index #sidebar {
+    padding-bottom: 2rem;
+}
+}
+.content {
+max-width: 49rem;
+text-align: justify;
+}
