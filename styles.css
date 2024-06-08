@@ -90,7 +90,7 @@ div {
     max-width: 49rem;
     text-align: justify;
     background: #fff;
-    color: #515151;
+    /* color: #515151; */
     padding: 2rem;
 }
 
