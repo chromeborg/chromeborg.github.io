@@ -1,3 +1,10 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     font-family: Atkinson Hyperlegible, ui-sans-serif, sans-serif, STIX Two Math;
@@ -6,7 +13,6 @@ body {
     box-sizing: border-box;
     background-attachment: fixed;
     background-color: #202020;
-    background-image: linear-gradient(to bottom, #323232, #0e0e0e);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -70,10 +76,7 @@ body {
     width: 100%;
     bottom: 0;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
+
   
   div {
     display: block;
@@ -95,31 +98,22 @@ body {
   }
   
   html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
     scrollbar-color: #09ff00 #202020;
     line-height: 1.5;
+    font-size: 1rem;
   }
   
   #sidebar {
-    width: 19rem;
+    display: none;
     flex: 0 0 auto;
-    padding: 2rem;
-    text-align: left;
-    position: fixed;
-  }
-  
-  @media (max-width: 49rem) {
-    #sidebar, .home #sidebar {
-        width: 100%;
-        text-align: center;
-    }
-  }
-  
-  #sidebar {
-    width: 30px;
     margin: 0.3rem 0 1rem;
     margin-right: 0.5rem;
     margin-top: 0;
-    display: none;
+    padding: 2rem;
+    position: fixed;
+    text-align: left;
+    width: 19rem;
   }
   
   .favicon {
@@ -142,3 +136,10 @@ body {
     margin-top: 0.25rem;
 }
   
+
+@media (max-width: 49rem) {
+    #sidebar, .home #sidebar {
+        width: 100%;
+        text-align: center;
+    }
+}
